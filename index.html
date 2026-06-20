@@ -868,7 +868,7 @@
         let questHtml = '';
         const hasQuests = order.quests && order.quests.some(q => q.text !== '');
         if (hasQuests) {
-            questHtml = `<div class="info-quests-title">📅 Daily Quests (Ghi nhận: ${order.questProgressText || "Chưa cập nhật"}):</div>`;
+            questHtml = `<div class="info-quests-title">📅 Daily Quests </div>`;
             order.quests.forEach(q => {
                 if (q.text !== '') {
                     questHtml += `
